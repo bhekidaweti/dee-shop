@@ -1,0 +1,18 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="display-4">Payment Notification</h1>
+    <p class="lead">This page displays the details of the payment notification received from PayFast.</p>
+    <hr>
+    <div class="alert alert-info">
+        <strong>Notification Details:</strong>
+        <p>Order ID: {{ order_id }}</p>
+        <p>Payment Status: {{ payment_status }}</p>
+        <p>Amount Paid: {{ amount_paid }}</p>
+        <p>Customer Email: {{ customer_email }}</p>
+        <!-- Add more details as required -->
+    </div>
+</div>
+{% endblock content %}
